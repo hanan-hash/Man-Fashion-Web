@@ -15,7 +15,7 @@ import product12 from '../assets/P12.png';
 
 // Updated product array with local images
 const products = [
-  { id: 1, name: ' 1', price: 20, image: product1 },
+  { id: 1, name: ' Product 1', price: 20, image: product1 },
   { id: 2, name: 'Product 2', price: 30, image: product2 },
   { id: 3, name: 'Product 3', price: 25, image: product3 },
   { id: 4, name: 'Product 4', price: 45, image: product4 },
