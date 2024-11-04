@@ -1,3 +1,4 @@
+// src/pages/Home.jsx
 import React from 'react';
 import ProductCard from '../components/ProductCard';
 import product1 from '../assets/P1.png';
@@ -13,7 +14,6 @@ import product10 from '../assets/P10.png';
 import product11 from '../assets/P11.png';
 import product12 from '../assets/P12.png';
 
-// Updated product array with local images
 const products = [
   { id: 1, name: ' Product 1', price: 20, image: product1 },
   { id: 2, name: 'Product 2', price: 30, image: product2 },
@@ -38,7 +38,6 @@ const Home = () => {
     </div>
   );
 };
-
 
 
 export default Home;

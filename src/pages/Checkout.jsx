@@ -11,11 +11,7 @@ const Checkout = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Here you can implement your payment processing logic
     setPaymentSuccess(true);
-
-    // Optional: Clear the cart after successful payment
-    // navigate('/'); // Redirect to the homepage after payment
   };
 
   return (
@@ -25,6 +21,7 @@ const Checkout = () => {
       ) : (
         <form onSubmit={handleSubmit}>
           <h2>Checkout</h2>
+          <h3>Cash on Delievery</h3>
           <div className="form-group">
             <label>Name:</label>
             <input
@@ -50,6 +47,7 @@ const Checkout = () => {
               onChange={(e) => setAddress(e.target.value)}
               required
             />
+            <h3>Cash on Delievery</h3>
           </div>
           <button type="submit">Pay Now</button>
         </form>

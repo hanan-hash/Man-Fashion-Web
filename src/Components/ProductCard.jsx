@@ -5,7 +5,7 @@ const ProductCard = ({ product }) => {
   const { addToCart } = useContext(CartContext);
 
   const handleAddToCart = () => {
-    addToCart({ ...product, quantity: 1 }); // Add quantity property
+    addToCart({ ...product, quantity: 1 });
   };
 
   return (
@@ -17,5 +17,6 @@ const ProductCard = ({ product }) => {
     </div>
   );
 };
+
 
 export default ProductCard;
