@@ -6,18 +6,18 @@ const Checkout = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [address, setAddress] = useState('');
-  const [paymentSuccess, setPaymentSuccess] = useState(false);
+  const [OrderSuccess, setOrderSuccess] = useState(false);
   const navigate = useNavigate();
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setPaymentSuccess(true);
+    setOrderSuccess(true);
   };
 
   return (
     <div className="checkout-container">
-      {paymentSuccess ? (
-        <h2>Payment Successful!</h2>
+      {OrderSuccess ? (
+        <h2>Congartulation Order Successful!</h2>
       ) : (
         <form onSubmit={handleSubmit}>
           <h2>Checkout</h2>
