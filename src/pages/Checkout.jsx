@@ -21,7 +21,6 @@ const Checkout = () => {
       ) : (
         <form onSubmit={handleSubmit}>
           <h2>Checkout</h2>
-          <h3>Cash on Delievery</h3>
           <div className="form-group">
             <label>Name:</label>
             <input
