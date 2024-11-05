@@ -33,7 +33,7 @@ const Cart = () => {
           {cart.map((product) => (
             <li key={product.id} className="cart-item">
               <h3>{product.name}</h3>
-              <p>${product.price}</p>
+              <p>Rs{product.price}</p>
               <div className="quantity-controls">
                 <button onClick={() => handleQuantityChange(product.id, product.quantity - 1)}>-</button>
                 <span>{product.quantity}</span>
@@ -46,7 +46,7 @@ const Cart = () => {
       )}
       {cart.length > 0 && (
         <div>
-          <h3>Total: ${calculateTotal()}</h3>
+          <h3>Total: Rs{calculateTotal()}</h3>
           <button className="clear-cart-button" onClick={clearCart}>
             Clear Cart
           </button>
