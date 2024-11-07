@@ -2,8 +2,9 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
+/* hook usestate control all input */ 
 const Checkout = () => {
-  const [name, setName] = useState('');
+  const [name, setName] = useState(''); 
   const [email, setEmail] = useState('');
   const [address, setAddress] = useState('');
   const [OrderSuccess, setOrderSuccess] = useState(false);
